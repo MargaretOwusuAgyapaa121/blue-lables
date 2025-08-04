@@ -1,6 +1,6 @@
 /* Navbar container layout */
 .navbar {
-  background: linear-gradient(to right, #92a9e6, #55729b);
+  background: linear-gradient(to right, #57585b, #323942);
   color: #fff;
   padding: 1rem 2rem;
   position: sticky; /* or fixed */
