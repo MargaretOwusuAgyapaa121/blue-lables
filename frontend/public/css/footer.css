@@ -1,42 +1,49 @@
+
 .footer {
-  background: linear-gradient(135deg, #111927, #1d2e4f, #2f4e6b);
-  color: #f5f7fa;
+  background: linear-gradient(145deg, #0f172a, #1e293b);
+  color: #f1f5f9;
   padding: 4rem 2rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   position: relative;
   overflow: hidden;
   z-index: 1;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .footer-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 2.5rem;
   max-width: 1200px;
   margin: auto;
+  animation: fadeIn 0.8s ease-in-out both;
 }
 
 .footer-brand h2 {
   font-size: 2rem;
   margin-bottom: 0.6rem;
   color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 .footer-brand p {
   font-size: 0.95rem;
-  color: #d1d5db;
-  opacity: 0.8;
+  color: #cbd5e1;
+  opacity: 0.85;
 }
 
 .footer-links h4,
 .footer-social h4,
 .footer-location h4 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-bottom: 1rem;
   color: #f9fafb;
   font-weight: 600;
   text-transform: uppercase;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 0.5rem;
 }
 
 .footer-links ul {
@@ -50,9 +57,9 @@
 }
 
 .footer-links a {
-  color: #d1d5db;
+  color: #94a3b8;
   text-decoration: none;
-  font-size: 0.96rem;
+  font-size: 0.95rem;
   transition: color 0.3s ease;
 }
 
@@ -62,56 +69,123 @@
 }
 
 .footer-location p {
-  font-size: 0.95rem;
-  color: #d1d5db;
+  font-size: 0.94rem;
+  color: #cbd5e1;
   margin-bottom: 0.4rem;
-  line-height: 1.5;
+  line-height: 1.6;
+}
+
+.view-offices-btn {
+  margin-top: 1rem;
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #f8fafc;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.92rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.05);
+}
+
+.view-offices-btn:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: scale(1.03);
+}
+
+
+ .branch-list {
+  max-height: 200px;
+  overflow-y: auto;
+  transition: max-height 0.3s ease;
+}
+
+
+.branch-list li {
+  background-color: rgba(255, 255, 255, 0.04);
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  margin-bottom: 0.8rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  border-left: 4px solid #38bdf8;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.04);
+}
+
+.branch-list li strong {
+  color: #ffffff;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.3rem;
 }
 
 .footer-social .social-icons {
   display: flex;
-  gap: 1rem;
+  gap: 1.2rem;
   align-items: center;
-  margin-top: 0.5rem;
+  margin-top: 0.8rem;
 }
 
 .footer-social a {
-  font-size: 1.3rem;
-  color: #d1d5db;
+  font-size: 1.4rem;
+  color: #cbd5e1;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .footer-social a:hover {
-  color: #fff;
-  transform: scale(1.1);
+  color: #ffffff;
+  transform: scale(1.15);
 }
 
-/* Wave footer effect (optional) */
+/* Subtle light wave at top */
 .footer::before {
   content: "";
   position: absolute;
   top: -60px;
   left: 0;
   width: 100%;
-  height: 150px;
-  background: radial-gradient(ellipse at top, rgba(255, 255, 255, 0.05), transparent 70%);
-  opacity: 0.4;
+  height: 160px;
+  background: radial-gradient(ellipse at top, rgba(255, 255, 255, 0.04), transparent 70%);
+  opacity: 0.5;
+  pointer-events: none;
 }
 
 /* Responsive tweaks */
 @media (max-width: 768px) {
   .footer {
-    padding: 3rem 1.2rem;
+    padding: 3rem 1.5rem;
     text-align: left;
   }
 
   .footer-brand h2 {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
 
   .footer-links,
   .footer-location,
   .footer-social {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
   }
 }
+
+/* Simple fade & slide animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+

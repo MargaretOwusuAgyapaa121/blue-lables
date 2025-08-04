@@ -8,16 +8,20 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
+        {/* Logo */}
         <div className="logo">
           <img src="/assets/images/logo/logobg.jpg" alt="Logo" />
         </div>
 
+       
+        {/* Hamburger for Mobile */}
         <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
           <span></span>
           <span></span>
           <span></span>
         </div>
 
+        {/* Navigation Links */}
         <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
           <li><Link to="/">Home</Link></li>
           <li className="dropdown">
