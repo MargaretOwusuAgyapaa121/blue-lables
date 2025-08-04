@@ -5,6 +5,32 @@
   color: #717171;
   line-height: 1.6;
 }
+.video-wrapper {
+  position: relative;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 2rem auto;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.video-wrapper video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Optional tweak for hero video */
+.hero-video-wrapper {
+  margin-bottom: 0;
+  padding-top: 40%; /* Custom ratio if needed */
+}
+
 
 .hero-section {
   position: relative;

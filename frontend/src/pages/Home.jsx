@@ -9,10 +9,13 @@ const Home = () => {
 
       {/* Hero Section */}
       <header className="hero-section">
-        <video autoPlay muted loop className="hero-video">
-          <source src="/assets/images/video/video1.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        <div className="video-wrapper hero-video-wrapper">
+          <video autoPlay muted loop className="hero-video">
+            <source src="/assets/images/video/video1.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
         <div className="hero-overlay" />
         <div className="hero-content">
           <h1>Discover the Future with YourBrand</h1>
@@ -47,14 +50,17 @@ const Home = () => {
 
       {/* Product Demo Section */}
       <section className="section product-demo">
-        <div className="section-content">
-          <h2>How to Use Our Product</h2>
-          <p>See it in action and learn how you can make the most of it.</p>
-          <video controls poster="/assets/images/product1.jpg" className="product-video">
+        <div className="video-wrapper">
+          <video
+            controls
+            poster="/assets/images/product1.jpg"
+            className="product-video"
+          >
             <source src="/assets/images/video/video1.mp4" type="video/mp4" />
             Your browser does not support this video.
           </video>
         </div>
+
       </section>
 
       {/* Credibility Section */}
