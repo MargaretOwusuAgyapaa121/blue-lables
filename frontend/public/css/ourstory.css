@@ -1,0 +1,162 @@
+/* Layout & Base Styles */
+.our-story-wrapper {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #c6d3e7, #aec7fa);
+  color: #f2f1f3;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.our-story-hero {
+  background-image: url("/assets/images/label.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  background: rgba(255, 255, 255, 0.01);
+  backdrop-filter: blur(6px);
+  text-align: center;
+  padding: 2rem;
+  border-radius: 16px;
+  animation: fadeIn 1.5s ease-in;
+}
+
+.hero-overlay h1 {
+  font-size: 3.2rem;
+  margin: 0;
+  color: #dbe3f1;
+}
+
+.hero-overlay p {
+  font-size: 1.2rem;
+  color: #717171;
+}
+
+/* Journey Content */
+.our-journey {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.story-section {
+  background: #E8E3Eb;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-left: 6px solid #1d3665;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.01);
+  animation: slideUp 0.8s ease forwards;
+}
+
+.story-section h2 {
+  font-size: 1.8rem;
+  color: #1d3665;
+  margin-bottom: 1rem;
+}
+
+.story-section p {
+  line-height: 1.7;
+  color: #717171;
+}
+
+/* Timeline */
+.timeline-section {
+  background: #e8e3eb;
+  padding: 4rem 2rem;
+}
+
+.timeline-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 2.5rem;
+  color: #1d3665;
+  animation: fadeIn 1s ease;
+}
+
+.timeline {
+  position: relative;
+  margin-left: 2rem;
+  padding-left: 2rem;
+  border-left: 4px solid #1d3665;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.5rem;
+  animation: fadeSlide 0.6s ease-in-out forwards;
+}
+
+.timeline-dot {
+  width: 16px;
+  height: 16px;
+  background-color: #e8e3eb;
+  border-radius: 50%;
+  position: absolute;
+  left: -10px;
+  top: 6px;
+}
+
+.timeline-content {
+  background-color: #E8E3Eb;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.timeline-content h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  color: #1d3665;
+}
+
+.timeline-content p {
+  margin-top: 0.5rem;
+  color: #717171;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.timeline-item:hover .timeline-content {
+  transform: translateY(-3px);
+  background-color: #f4f9ff;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeSlide {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-overlay h1 {
+    font-size: 2.2rem;
+  }
+
+  .timeline {
+    margin-left: 1rem;
+    padding-left: 1rem;
+  }
+
+  .story-section {
+    padding: 1.5rem;
+  }
+}

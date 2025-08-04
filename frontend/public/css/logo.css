@@ -1,0 +1,218 @@
+/* Base */
+.our-logo-page {
+  font-family: 'Segoe UI', sans-serif;
+  color: #e8e3eb;
+  background: linear-gradient(to bottom right, #f8fbff, #e8efff);
+}
+
+/* Hero */
+.logo-hero {
+  background: url("/assets/images/brand3.jpg") center/cover no-repeat;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  padding: 1rem;
+}
+
+.logo-overlay {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  padding: 2rem;
+  border-radius: 16px;
+  animation: fadeIn 1.5s ease-in;
+  max-width: 700px;
+}
+
+.logo-overlay h1 {
+  font-size: 3rem;
+  color: #e8e3eb;
+}
+
+.logo-overlay p {
+  font-size: 1.2rem;
+  color: #717171;
+}
+
+/* Logo Showcase */
+.logo-showcase {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.logo-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  animation: slideUp 1s ease-out;
+}
+
+.logo-container img {
+  width: 240px;
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.logo-info {
+  flex: 1;
+  min-width: 250px;
+}
+
+.logo-info h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #1d3665;
+}
+
+.logo-info p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #717171;
+  margin-bottom: 1rem;
+}
+
+/* Values Section */
+.logo-values {
+  background: #e8e3eb;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.logo-values h2 {
+  font-size: 2.2rem;
+  color: #1d3665;
+  margin-bottom: 2rem;
+  animation: fadeIn 1s ease;
+}
+
+.value-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card {
+  background: #f1f5f9;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  flex: 1 1 250px;
+  max-width: 300px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  animation: popIn 1s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  background-color: #e0edff;
+}
+
+.card h3 {
+  color: #1d3665;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  color: #475569;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes popIn {
+  0%   { opacity: 0; transform: scale(0.8); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+/* Responsive Enhancements */
+@media (max-width: 992px) {
+  .logo-overlay h1 {
+    font-size: 2.5rem;
+  }
+
+  .logo-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo-info {
+    padding: 1rem 0;
+  }
+
+  .logo-info h2 {
+    font-size: 1.7rem;
+  }
+
+  .logo-info p {
+    font-size: 0.95rem;
+  }
+
+  .card {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo-overlay {
+    padding: 1.5rem;
+  }
+
+  .logo-overlay h1 {
+    font-size: 2rem;
+  }
+
+  .logo-overlay p {
+    font-size: 1rem;
+  }
+
+  .logo-values h2 {
+    font-size: 1.7rem;
+  }
+
+  .card h3 {
+    font-size: 1.2rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .logo-overlay h1 {
+    font-size: 1.7rem;
+  }
+
+  .logo-overlay p {
+    font-size: 0.95rem;
+  }
+
+  .logo-info h2 {
+    font-size: 1.4rem;
+  }
+
+  .card h3 {
+    font-size: 1.1rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+}
