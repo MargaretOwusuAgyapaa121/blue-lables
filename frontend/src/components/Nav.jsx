@@ -10,10 +10,18 @@ const Navbar = () => {
       <div className="navbar-container">
         {/* Logo */}
         <div className="logo">
-          <img src="/assets/images/logo/logobg.jpg" alt="Logo" />
+          <Link to="/">
+            <img
+              src="/assets/images/logo/logobg.jpg"
+              alt="Company Logo"
+              className="logo-image"
+              style={{ cursor: "pointer" }}
+            />
+          </Link>
+
         </div>
 
-       
+
         {/* Hamburger for Mobile */}
         <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
           <span></span>

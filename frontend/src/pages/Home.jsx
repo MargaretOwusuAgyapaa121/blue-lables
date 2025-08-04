@@ -9,12 +9,11 @@ const Home = () => {
 
       {/* Hero Section */}
       <header className="hero-section">
-        <div className="video-wrapper hero-video-wrapper">
-          <video autoPlay muted loop className="hero-video">
-            <source src="/assets/images/video/video1.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
+        <video autoPlay muted loop className="hero-video">
+          <source src="/assets/images/video/video1.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
 
         <div className="hero-overlay" />
         <div className="hero-content">
