@@ -28,31 +28,31 @@ const About = () => {
         <h2 data-aos="fade-up">Our Strategic Goals</h2>
         <div className="goals-grid">
           <div className="goal-card" data-aos="fade-up" data-aos-delay="100">
-            <img src="/assets/images/pro.jpg" alt="Market Penetration" />
+            <img src="/assets/images/abt.jpg" alt="Market Penetration" />
             <h4>Market Penetration</h4>
             <p>Achieve 20% market share in Ghana within the first year, expanding into West Africa next.</p>
           </div>
 
           <div className="goal-card" data-aos="fade-up" data-aos-delay="200">
-            <img src="/assets/images/pro.jpg" alt="Brand Awareness" />
+            <img src="/assets/images/abt1.jpg" alt="Brand Awareness" />
             <h4>Brand Awareness</h4>
             <p>Reach 60% brand recognition within 12 months through bold marketing campaigns.</p>
           </div>
 
           <div className="goal-card" data-aos="fade-up" data-aos-delay="300">
-            <img src="/assets/images/pro.jpg" alt="Sales Growth" />
+            <img src="/assets/images/brand6.jpg" alt="Sales Growth" />
             <h4>Sales Growth</h4>
             <p>Grow sales by 25% annually through strong networks and tailored strategies.</p>
           </div>
 
           <div className="goal-card" data-aos="fade-up" data-aos-delay="400">
-            <img src="/assets/images/pro.jpg" alt="Customer Retention" />
+            <img src="/assets/images/products.jpg" alt="Customer Retention" />
             <h4>Customer Retention</h4>
             <p>Maintain 95% satisfaction by delivering excellent service and quality.</p>
           </div>
 
           <div className="goal-card" data-aos="fade-up" data-aos-delay="500">
-            <img src="/assets/images/pro.jpg" alt="Sustainability" />
+            <img src="/assets/images/abt2.jpg" alt="Sustainability" />
             <h4>Sustainability & Innovation</h4>
             <p>Improve operations to protect the environment and anticipate customer needs.</p>
           </div>
