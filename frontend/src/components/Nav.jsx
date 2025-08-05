@@ -1,10 +1,10 @@
-import React, { useState, useContext } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { ThemeContext } from "../context/ThemeContext";
+
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const { theme, toggleTheme } = useContext(ThemeContext);
+ 
 
   return (
     <nav className="navbar">
@@ -43,12 +43,7 @@ const Navbar = () => {
           <li><Link to="/credibility">Credibility</Link></li>
           <li><Link to="/contact">Contact</Link></li>
 
-          {/* Theme Toggle Button */}
-          <li>
-            <button onClick={toggleTheme} className="theme-toggle-btn">
-              {theme === "light" ? "🌙 Dark" : "☀️ Light"}
-            </button>
-          </li>
+        
         </ul>
       </div>
     </nav>
