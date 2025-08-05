@@ -1,9 +1,10 @@
-// /src/components/Nav.jsx
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
+import { ThemeContext } from "../context/ThemeContext";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (
     <nav className="navbar">
@@ -18,9 +19,7 @@ const Navbar = () => {
               style={{ cursor: "pointer" }}
             />
           </Link>
-
         </div>
-
 
         {/* Hamburger for Mobile */}
         <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
@@ -43,6 +42,13 @@ const Navbar = () => {
           <li><Link to="/gallery">Gallery</Link></li>
           <li><Link to="/credibility">Credibility</Link></li>
           <li><Link to="/contact">Contact</Link></li>
+
+          {/* Theme Toggle Button */}
+          <li>
+            <button onClick={toggleTheme} className="theme-toggle-btn">
+              {theme === "light" ? "🌙 Dark" : "☀️ Light"}
+            </button>
+          </li>
         </ul>
       </div>
     </nav>

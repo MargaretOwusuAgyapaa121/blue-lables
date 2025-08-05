@@ -3,7 +3,7 @@
   background: linear-gradient(to right, #57585b, #323942);
   color: #fff;
   padding: 1rem 2rem;
-  position: sticky; /* or fixed */
+  position: sticky; 
   top: 0;
   z-index: 1000;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
