@@ -100,6 +100,24 @@ button {
 button:hover {
   background: #1c64f2;
 }
+.contact-info-box {
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+}
+
+.contact-info-box .social-icons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+
+.contact-info-box .map-box iframe {
+  border-radius: 8px;
+}
+
 
 /* Contact Info */
 .contact-info-box p {

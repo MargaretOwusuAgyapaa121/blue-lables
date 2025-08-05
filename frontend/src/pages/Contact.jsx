@@ -89,22 +89,51 @@ const Contact = () => {
           <h2>Contact Information</h2>
           <p><strong>Email:</strong> info@yourbrand.com</p>
           <p><strong>Phone:</strong> +233 53 316 4966 / +233 24 474 9756 / +233 24 405 0146</p>
-          <p><strong>Address:</strong> 12 Osu Avenue, Accra, Ghana</p>
+          <p><strong>Address:</strong> P93G+VRH Ashanti New Town, Kumasi, Ghana</p>
+
+          {/* Social Icons */}
           <div className="social-icons">
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
               <FaFacebookF />
             </a>
-            <a href="https://x.com/estaktrading?t=RT4sLGtNpkJYLBCHk59WkPQ&s=0" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://x.com/estaktrading?t=RT4sLGtNpkJYLBCHk59WkPQ&s=0"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaTwitter />
             </a>
-            <a href="https://www.tiktok.com/@estaktradingenter?_t=ZM-8yMgrytvEgv&_r=1" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.tiktok.com/@estaktradingenter?_t=ZM-8yMgrytvEgv&_r=1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaTiktok />
             </a>
-            <a href="https://www.snapchat.com/add/estaktradingent?share_id=sZTM8VKQRbE&locale=en-GB" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.snapchat.com/add/estaktradingent?share_id=sZTM8VKQRbE&locale=en-GB"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaSnapchat />
             </a>
           </div>
+
+          {/* Embedded Google Map */}
+          <div className="map-box" style={{ marginTop: "1.5rem", width: "100%", height: "250px", borderRadius: "8px", overflow: "hidden", boxShadow: "0 0 10px rgba(0,0,0,0.1)" }}>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.456660492154!2d-0.19005698523810432!3d5.560487735585163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdc8c5b3cf42c69d%3A0xd90ad36f5d54fa4b!2sOsu%2C%20Accra!5e0!3m2!1sen!2sgh!4v1691100203459!5m2!1sen!2sgh"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
+
+
       </section>
     </div>
   );
