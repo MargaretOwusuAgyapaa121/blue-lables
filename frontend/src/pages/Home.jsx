@@ -27,7 +27,7 @@ const Home = () => {
 
 
 
-        <div className="hero-overlay" />
+        {/* <div className="hero-overlay" /> */}
         <div className="hero-content">
           <h1>Discover the Future with YourBrand</h1>
           <p>Modern solutions tailored to Africa’s evolving needs.</p>
