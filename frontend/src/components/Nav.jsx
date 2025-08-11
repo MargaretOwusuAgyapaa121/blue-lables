@@ -36,6 +36,7 @@ const Navbar = () => {
             <div className="dropdown-content">
               <Link to="/ourstory">Our Story</Link>
               <Link to="/meet">Meet the CEO</Link>
+              <Link to="/team">Our Team</Link>
               <Link to="/OurLogo">Our Logo</Link>
             </div>
           </li>

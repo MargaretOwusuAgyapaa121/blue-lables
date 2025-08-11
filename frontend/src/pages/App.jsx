@@ -11,6 +11,7 @@ import Gallery from "./Gallery.jsx";
 import Credibility from "./Credibility.jsx";
 import Contact from "./Contact.jsx";
 import Footer from "../components/Footer.jsx"; 
+import Team from "./Team.jsx"; // Assuming you have a Team component
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/credibility" element={<Credibility />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/team" element={<Team />} />
       </Routes>
       <Footer />
     </Router>
