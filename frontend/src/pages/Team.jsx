@@ -27,6 +27,16 @@ const teamMembers = [
     name: "Pastor George Appiah Kubi",
     role: "Coastal Area Manager",
     image: "/assets/images/team/pastor Geoge .jpg"
+  },
+  {
+    name: "Samuel Opoku",
+    role: "Sales Manager",
+    image: "/assets/images/team/sales.jpg"
+  },
+  {
+    name: "Ms.Gifty Serwaa Gyamfi",
+    role: "Marketing Manager",
+    image: "/assets/images/team/marketing.jpg"
   }
 ];
 
